@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Devin's Pokedex</title>
+  </head>
+  <body>
+    <h1>Catch 'em All</h1>
+    <div class="pokedex">
+      <div class="btn" id="ball"><button></button></div>
+      <div class="btn" id="button"><button onclick="activate()"></button></div>
+      <div class="hidden" id="left">
+        <button class="top"></button>
+        <div class="pokemon-image"></div>
+        <button onclick="exit()" class="close">X</button>
+        <div class="bar"></div>
+      </div>
+      <div class="hidden" id="right">
+        <div class="pokemon-info"></div>
+        <div class="pokemon-buttons"></div>
+        <button class="circle"></button>
+        <div class="speaker1"></div>
+        <div class="speaker2"></div>
+      </div>
+    </div>
+    <script src="./pokedex.js"></script>
+  </body>
+</html>
